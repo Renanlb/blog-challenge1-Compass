@@ -130,7 +130,7 @@ function createCardElement(card) {
         <div class="text-container"><h3">${card.title}</h3>
         <p>${card.body}</p></div>
 
-        <button class="expand-text"><a href:"">Expand...</a></button>
+        <button class="expand-text"><a href="">Expand...</a></button>
         `;
     cardElement.addEventListener('click', () => {
         window.location.href = `details.html?id=${card.id}`;
@@ -147,3 +147,23 @@ function renderCards() {
     }
 }
 renderCards();
+function renderPostDetails() {
+    const postDetailsContainer = document.getElementById('postDetails');
+    const urlParams = new URLSearchParams(window.location.search);
+    const cardId = Number(urlParams.get('id'));
+    const selectedCard = cards.find((card) => card.id === cardId);
+    if (postDetailsContainer && selectedCard) {
+        const cardDetailsElement = document.createElement('div');
+        cardDetailsElement.innerHTML =
+            `
+        <img src="${selectedCard.imageURL}"alt="${selectedCard.title}">
+        <h1>${selectedCard.title}</h1>
+        <p>${selectedCard.body}</p>
+        <ul>
+            ${selectedCard.comments.map((Comment) => `<li>${Comment.id} - ${Comment.email} - ${Comment.body}</li>`).join('')}
+        </ul>
+        `;
+        postDetailsContainer.appendChild(cardDetailsElement);
+    }
+}
+renderPostDetails();
