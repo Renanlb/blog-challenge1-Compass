@@ -59,7 +59,10 @@ main{
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 3.6px;
-    margin-top: 70px;
+    margin-top: 140px;
+    border-bottom: 4px #3A4F9A solid;;
+    padding-bottom: 20px;
+    width: 230px;
 }
 
 /*-------------- cards container style --------------*/
@@ -98,6 +101,7 @@ main{
     gap: 8px;
     width: 409px;
     height: 273px;
+    margin-bottom: 40px;
 }
 
 .text-container{
@@ -113,6 +117,11 @@ main{
     letter-spacing: 2px;
 }
 
+.text-container p{
+    margin-top: 10px;
+    margin-bottom: -20px;
+}
+
 .expand-text{
     color: var(--title, #3A4F9A);
     background-color: transparent;
@@ -122,11 +131,22 @@ main{
     font-weight: 700;
     margin-bottom: -50%;
     line-height: 20px;
-    padding: 0%;
+    padding: 0.5rem 1.0rem; 
     letter-spacing: 1.3px;
     margin-left: 300px;
+    margin-top: -20px;
 }
 
+.expand-text button {
+    margin-top: -30px;
+    padding-top: -30px;
+}
+
+.expand-text a {
+    color: var(--title, #3A4F9A);
+    text-decoration: none;
+    margin-top: -20px;
+}
 .card p{
     color: var(--gray, #575757);
     font-size: 13px;
@@ -138,5 +158,5 @@ main{
     width: 359px;
     height: 109px;
     flex-direction: column;
-    flex-shrink: 0;
+    padding-bottom: -40px;
 }
