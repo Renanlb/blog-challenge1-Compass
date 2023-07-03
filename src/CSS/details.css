@@ -133,6 +133,7 @@
     width: 652px;
     flex-direction: column;
     flex-shrink: 0;
+    
 }
 
 .usuario {
@@ -143,12 +144,19 @@
     font-weight: 600;
     line-height: 20px;
     letter-spacing: 1.6px;
+    padding-top: 10px;
 }
 
 .body-comment {
     color: #575757;
+    font-size: 16px;
     font-family: Inter;
-    font-style: light;
-    font-weight: 300;
     font-style: italic;
+    font-weight: 200;
+    line-height: 20px;
+    letter-spacing: 1.60px;
+    word-wrap: break-word;
+    border-bottom: 0.25px #575757 solid;;
+    padding-bottom: 10px;
+    padding-top: 10px;
 }

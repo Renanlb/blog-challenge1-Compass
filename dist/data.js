@@ -130,7 +130,7 @@ function createCardElement(card) {
         <div class="text-container"><h3">${card.title}</h3>
         <p>${card.body}</p></div>
 
-        <button class="expand-text"><a href="">Expand...</a></button>
+        <button class="expand-text"><a href="../details.html">Expand...</a></button>
         `;
     cardElement.addEventListener('click', () => {
         window.location.href = `details.html?id=${card.id}`;
@@ -163,10 +163,9 @@ function renderPostDetails() {
         </div>
         <div class="comments-container">
             <div class="comments">
-                 ${selectedCard.comments.map((Comment) => `<span class="usuario">User ${Comment.id}: ${Comment.email}:</span><span class="body-comment"> ${Comment.body}</span>`).join('')} 
+                 ${selectedCard.comments.map((Comment) => `<span class="usuario">User ${Comment.id}: ${Comment.email}:</span><address class="body-comment"> ${Comment.body}</address>`).join('')} 
             </div>
-        </div>
-        `;
+        </div>`;
         postDetailsContainer.appendChild(cardDetailsElement);
     }
 }
