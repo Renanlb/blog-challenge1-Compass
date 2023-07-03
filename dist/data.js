@@ -10,13 +10,13 @@ const cards = [
             {
                 id: 1,
                 postId: 1,
-                email: "rrr",
+                email: "john@gmail.com",
                 body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...'
             },
             {
                 id: 2,
                 postId: 1,
-                email: "rrr",
+                email: "tim.duncan@hotmail.com",
                 body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...'
             },
         ]
@@ -162,9 +162,9 @@ function renderPostDetails() {
         <div class="body-details"><p>${selectedCard.body}</p></div>
         </div>
         <div class="comments-container">
-        <span class="usuario">
-            ${selectedCard.comments.map((Comment) => `<li>${Comment.id}: ${Comment.email}: ${Comment.body}</li>`).join('')}
-        </ul>
+            <div class="comments">
+                 ${selectedCard.comments.map((Comment) => `<span class="usuario">User ${Comment.id}: ${Comment.email}:</span><span class="body-comment"> ${Comment.body}</span>`).join('')} 
+            </div>
         </div>
         `;
         postDetailsContainer.appendChild(cardDetailsElement);

@@ -118,7 +118,7 @@
     flex-shrink: 0;
 }
 
-.comments-container ul {
+.comments-container {
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -128,3 +128,27 @@
     margin-top: 100px;
 }
 
+.comments{
+    display: flex;
+    width: 652px;
+    flex-direction: column;
+    flex-shrink: 0;
+}
+
+.usuario {
+    color: #3A4F9A;
+    font-size: 16px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 20px;
+    letter-spacing: 1.6px;
+}
+
+.body-comment {
+    color: #575757;
+    font-family: Inter;
+    font-style: light;
+    font-weight: 300;
+    font-style: italic;
+}
