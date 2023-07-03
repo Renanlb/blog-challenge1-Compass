@@ -130,7 +130,7 @@ function createCardElement(card) {
         <div class="text-container"><h3">${card.title}</h3>
         <p>${card.body}</p></div>
 
-        <button class="expand-text"><a href="../details.html">Expand...</a></button>
+        <button class="expand-text"><a href="../details.html?id=${card.id}">Expand...</a></button>
         `;
     cardElement.addEventListener('click', () => {
         window.location.href = `details.html?id=${card.id}`;
