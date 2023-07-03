@@ -1,0 +1,130 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Inter', sans-serif;
+}
+
+/*-------------- header's style --------------*/
+
+.navbar{
+    position: fixed;
+    top: 0;
+    width: 100%;
+    padding-top: 12px;
+    background-color: #32325D;
+    width: fixed 1512px;
+    height: 49px;
+    text-decoration: none;
+    color: white;
+}
+
+.title-blog{
+    color: var(--white, #FFF);
+    font-size: 24px;
+    font-family: Inter;
+    font-weight: 600;
+    margin-left: 80px;
+}
+
+.link-blog {    
+    text-decoration: none;
+    color: white;
+} 
+
+.logo{
+    margin-left: 30px;
+}
+
+#logo-image{
+    position: absolute;
+    top: 15px;
+    width: 28px;
+    height: 28px;
+    margin-left: 46px;
+}
+
+/*-------------- back-button style --------------*/
+.arrow-background {
+    position: fixed;
+    width: 75px;
+    height: 75px;
+    top: 82px;
+    left: 34px;
+    flex-shrink: 0;
+    border-radius: 75px;
+    border: 0.3px solid rgba(255, 255, 255, 0.60);
+    background: var(--primary, #32325d);
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#postDetails {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.postDetailsContainer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 771px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+}
+
+.postDetailsContainer img {
+    align-self: center;
+    width: 700px;
+    height: 400px;
+    flex-shrink: 0;
+    margin-top: 79px;
+}
+
+.postDetailsContainer h1{
+    color: var(--title, #3A4F9A);
+    font-size: 20px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 20px;
+    letter-spacing: 2px;
+    margin-top: 40px;
+    margin-right: 570px;
+}
+
+.postDetailsContainer p{
+    display: flex;
+    width: 676.746px;
+    height: 124.332px;
+    flex-direction: column;
+    flex-shrink: 0;
+    color: var(--gray, #575757);
+    font-size: 13px;
+    font-family: Inter;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 20px;
+    letter-spacing: 1.3px;
+    margin-top: 20px;
+    margin-left: 30px;
+}
+
+.comments-container{
+    width: 762px;
+    height: 321px;
+    flex-shrink: 0;
+}
+
+.comments-container ul {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 771px;
+    margin-bottom: 20px;
+    box-shadow: 0px 4px 4px 0px #00000040;
+    margin-top: 100px;
+}
+
