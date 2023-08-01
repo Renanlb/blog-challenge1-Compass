@@ -6,23 +6,22 @@
 
 /*-------------- header style --------------*/
 .navbar{
+    display: flex;
+    align-items: center;
     position: fixed;
     top: 0;
     width: 100%;
-    padding-top: 12px;
     background-color: #32325D;
-    width: fixed 1512px;
-    height: 49px;
+    height: 55px;
     text-decoration: none;
     color: white;
 }
-
-.title-blog{
-    color: var(--white, #FFF);
-    font-size: 24px;
-    font-family: Inter;
-    font-weight: 600;
-    margin-left: 80px;
+.link-blog {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    margin-left: 100px;
+    gap: 15px;
 }
 
 .link-blog {    
@@ -30,18 +29,15 @@
     color: white;
 } 
 
-.logo{
-    margin-left: 30px;
+.link-blog img {
+    width: 32px;
+    height: 32px;
 }
 
-
-#logo-image{
-    position: absolute;
-    top: 15px;
-    width: 28px;
-    height: 28px;
-    margin-left: 46px;
+.link-blog span {
+    font-size: 25px;
 }
+
 /*-------------- homepage's style --------------*/
 
 main{
@@ -52,7 +48,7 @@ main{
 
 /*-------------- homepage's title --------------*/
 .main-title{
-    margin-left: 18px;
+    margin-left: 45px;
     color: var(--title, #3A4F9A);
     font-size: 36px;
     font-family: Inter;
@@ -70,7 +66,7 @@ main{
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around; 
-    margin-top: 0%;
+    margin-top: 50px;
 }
 
 .card{
@@ -83,6 +79,7 @@ main{
     margin-left: 0%;
     background: var(--white, #FFF);
     box-shadow: 0px 4px 4px 0px rgba(0, 0, 0, 0.25);
+    margin-bottom: 50px;
 }
 
 .img-container {
@@ -108,7 +105,7 @@ main{
     width: auto;
     padding-left: 25px;
     padding-right: 25px;
-    height: 8em;
+    height: 7em;
     color: var(--title, #3A4F9A);
     font-size: 20px;
     font-family: Inter;
@@ -119,7 +116,6 @@ main{
 
 .text-container p{
     margin-top: 10px;
-    margin-bottom: -20px;
 }
 
 .expand-text{
@@ -131,10 +127,8 @@ main{
     font-weight: 700;
     margin-bottom: -50%;
     line-height: 20px;
-    padding: 0.5rem 1.0rem; 
     letter-spacing: 1.3px;
     margin-left: 300px;
-    margin-top: -20px;
 }
 
 .expand-text button {

@@ -1,3 +1,5 @@
+"use strict";
+;
 const cards = [
     {
         id: 1,
@@ -62,7 +64,7 @@ const cards = [
     {
         id: 4,
         title: 'Airpods Pro',
-        imageURL: 'src/img/airpods.jpg',
+        imageURL: 'src/img/Airpods.png',
         body: 'Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industrys standard dummy text ever since the 1500s, when an unknown printer took...',
         comments: [
             {
@@ -128,7 +130,7 @@ function createCardElement(card) {
         <div class="text-container"><h3">${card.title}</h3>
         <p>${card.body}</p></div>
 
-        <button class="expand-text"><a href="../details.html?id=${card.id}">Expand...</a></button>
+        <button class="expand-text"><a href="details.html?id=${card.id}">Expand...</a></button>
         `;
     cardElement.addEventListener('click', () => {
         window.location.href = `details.html?id=${card.id}`;
